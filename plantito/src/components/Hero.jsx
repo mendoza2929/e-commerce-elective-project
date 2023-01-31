@@ -26,7 +26,7 @@ const Hero = ({hero_api: {title,subtitle,img,btn_text,img_extra,social_links}}) 
                     </div>
                 </div>
                 <div className='flex items-center'>
-                    <img src={img} alt="hero-img" className='w-auto h-[45vh] lg:h-[35vh] md:h-[31vh] sm:h-[21vh] xsm:h-[19vh] transition-theme -rotate-[25deg] hover:rotate-0 cursor-pointer object-fill' />
+                    <img src={img} alt="hero-img" className='w-auto h-[45vh] lg:h-[35vh] md:h-[31vh] sm:h-[21vh] xsm:h-[19vh] transition-theme  hover:rotate-0 cursor-pointer object-fill' />
                 </div>
             </div>
         </div>

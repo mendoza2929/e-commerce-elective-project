@@ -1,4 +1,4 @@
-import hero_img from '../assets/mainhero.png'
+import hero_img from '../assets/main_hero.png'
 import extra1 from '../assets/extra1.png'
 import extra2 from '../assets/extra2.png'
 import extra3 from '../assets/extra3.png'
@@ -8,6 +8,9 @@ import plant4 from '../assets/plant5.png'
 import plant5 from '../assets/plant6.png'
 import plant6 from '../assets/plant7.png'
 import plant7 from '../assets/plant8.png'
+
+import highlights from '../assets/highlight.png'
+import featured from '../assets/featured.png'
 
 import facebook from '../assets/facebook.svg'
 import messenger from '../assets/messenger.svg'
@@ -38,22 +41,22 @@ const popularSales = {
     {
       id:"01",
       title:"Succulent Plant",
-      text: "Succulent plant Gardening Flower, plant, cactaceae, cactus, plants",
+      text: "Succulent plant Gardening Flower, plant, cactus, plants",
       btn: "Buy Now",
       img: extra3,
       price:"1000",
       color:"from-green-600 to blue-500",
-      shadow: "shadow-lg shadow-blue-500"
+      shadow: "shadow-lg shadow-green-500"
     },
     {
       id:"02",
-      title:"Arecaceae Plant",
+      title:" Plant",
       text: "Leaf Palm branch, Potted green plants, green leafed plant and white plant pot, ",
       btn: "Buy Now",
       img: plant2,
       price:"1000",
       color:"from-green-600 to blue-500",
-      shadow: "shadow-lg shadow-blue-500"
+      shadow: "shadow-lg shadow-green-500"
     },
     {
       id:"03",
@@ -63,7 +66,7 @@ const popularSales = {
       img: plant3,
       price:"1000",
       color:"from-green-600 to blue-500",
-      shadow: "shadow-lg shadow-blue-500"
+      shadow: "shadow-lg shadow-green-500"
     }
   ]
 }
@@ -79,7 +82,7 @@ const topRates = {
       img: plant4,
       price:"1000",
       color:"from-green-600 to blue-500",
-      shadow: "shadow-lg shadow-blue-500"
+      shadow: "shadow-lg shadow-green-500"
     },
     {
       id:"02",
@@ -89,29 +92,53 @@ const topRates = {
       img: plant5,
       price:"1000",
       color:"from-green-600 to blue-500",
-      shadow: "shadow-lg shadow-blue-500"
+      shadow: "shadow-lg shadow-green-500"
     },
     {
       id:"03",
-      title:"Howea forsteriana  ",
-      text: "Ravenea Areca palm Houseplant, potted plants, green leafed plant",
+      title:"Howes forsterite  ",
+      text: "Ravened Areca palm Houseplant, potted plants, green leafed plant",
       btn: "Buy Now",
       img: plant6,
       price:"1000",
       color:"from-green-600 to blue-500",
-      shadow: "shadow-lg shadow-blue-500"
+      shadow: "shadow-lg shadow-green-500"
     },
     {
       id:"07",
-      title:"Ravenea Houseplant ",
+      title:"Ravened Houseplant ",
       text: "Flower, potted plant, glass, leaf, plant Stem ",
       btn: "Buy Now",
-      img: plant6,
+      img: plant7,
       price:"1000",
       color:"from-green-600 to blue-500",
-      shadow: "shadow-lg shadow-blue-500"
+      shadow: "shadow-lg shadow-green-500"
     },
   ]
 }
 
-export {hero_api,popularSales,topRates}
+
+
+
+const highlight = {
+  heading: "HIGHLIGHTS",
+  title: "Create an indoor garden with variety of plants",
+  text: "Do you have a dream garden in mind but can't seem to find the space to make this dream reality?",
+  btn: "Explore More",
+  url: "https://www.apartmenttherapy.com/15-indoor-garden-ideas-for-wannabe-gardeners-in-small-spaces-228575",
+  img: highlights
+};
+
+const plant = {
+  heading: "FEATURED",
+  title: "Plants make a positive impact on your environment",
+  text: "Provide your house & office space with the right plants and let our plant care team keep them flourishing",
+  btn: "Explore More",
+  url: "https://www.goldenarrow.com/blog/how-plants-help-environment#:~:text=Plants%20improve%20the%20environment%20in,to%20sustain%20life%20on%20Earth.",
+  img: featured
+};
+
+
+
+
+export {hero_api,popularSales,topRates,highlight,plant}

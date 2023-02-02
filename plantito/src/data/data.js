@@ -139,6 +139,38 @@ const plant = {
 };
 
 
+const footerAPI = {
+  titles: [ {title: "About Plantito"},{title: "Get Help"},{title: "Company"} ],
+  links: [
+    [
+      {link: "News"},
+      {link: "Careers"},
+      {link: "Investors"},
+      {link: "Purpose"},
+      {link: "Sustainability"},
+    ],
+    [
+      {link: "Order Status"},
+      {link: "Shipping & Delivery"},
+      {link: "Payment Options"},
+      {link: "Gift Card Balance"},
+      {link: "Contact Us"},
+      {link: "FAQ"},
+      {link: "Blog"},
+    ],
+    [
+      {link: "Gift Cards"},
+      {link: "Promotions"},
+      {link: "Find A Store"},
+      {link: "Signup"},
+      {link: "Plantito Jouneral"},
+      {link: "Send Us Feeback"},
+    ],
+  ]
+};
 
 
-export {hero_api,popularSales,topRates,highlight,plant}
+
+
+
+export {hero_api,popularSales,topRates,highlight,plant,footerAPI}

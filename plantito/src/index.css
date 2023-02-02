@@ -36,7 +36,7 @@
    
   /* Theme-Colors */
   .bg-theme {
-    background-image: linear-gradient( 0.2deg,  rgb(142, 240, 168) 4.8%, rgb(25, 91, 36) 85.5% );
+    background-image: linear-gradient( 0.2deg,  rgb(66, 167, 93) 4.8%, rgb(25, 91, 36) 85.5% );
   }
   .bg-theme-cart {
     @apply bg-gradient-to-b from-slate-900 to-gray-900 shadow-sm shadow-gray-900;

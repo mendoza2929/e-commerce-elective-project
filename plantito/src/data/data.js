@@ -75,7 +75,7 @@ const topRates = {
   title: "Our Products",
   items: [
     {
-      id:"01",
+      id:"04",
       title:"Green plant",
       text: "Flowerpot Houseplant Hanging basket, flower pot, grass, lawn",
       btn: "Buy Now",
@@ -85,7 +85,7 @@ const topRates = {
       shadow: "shadow-lg shadow-green-500"
     },
     {
-      id:"02",
+      id:"05",
       title:"Houseplant ",
       text: "Tree Soil, plant, leaf, artificial Flower, palm Tree",
       btn: "Buy Now",
@@ -95,7 +95,7 @@ const topRates = {
       shadow: "shadow-lg shadow-green-500"
     },
     {
-      id:"03",
+      id:"06",
       title:"Howes forsterite  ",
       text: "Ravened Areca palm Houseplant, potted plants, green leafed plant",
       btn: "Buy Now",

@@ -1,7 +1,7 @@
 import React from 'react'
-import {ShoppingBagIcon} from '@heroicons/react/24/solid';
+import {ShoppingCartIcon} from '@heroicons/react/24/solid';
 import { useDispatch } from 'react-redux';
-import { setAddItemToCart } from '../../app/CartSlice';
+import { setAddItemToCart, setOpenCart } from '../../app/CartSlice';
 
 const Item = ({ifExist, id, color,shadow,title,text,img,btn,price }) => {
 
@@ -11,6 +11,12 @@ const Item = ({ifExist, id, color,shadow,title,text,img,btn,price }) => {
         const item = {id, title, text, img, color,shadow,price};
 
         dispatch(setAddItemToCart(item));
+    };
+
+    const onCartToggle = () => {
+        dispatch(setOpenCart({
+            cartState: true
+        }))
     }
 
   return (
@@ -24,8 +30,8 @@ const Item = ({ifExist, id, color,shadow,title,text,img,btn,price }) => {
                     <div className='flex items-center bg-white/100 px-1 rounded blur-effect-theme text-sm font-medium'><h1 className='text-black text-sm font-medium'>₱ {price}</h1></div>
                 </div>
                 <div className='flex items-center gap-3'>
-                    <button type="button" className='bg-white 90 blur-effect-theme button-theme p-0.5 shadow shadow-sky-200' onClick={()=>onAddToCart()}><ShoppingBagIcon className='icon-style text-slate-900'/></button>
-                    <button type='button' className='bg-white 90 blur-effect-theme button-theme p-0.5 shadow shadow-sky-200 text-sm px-2 py-1'>{btn}</button>
+                    <button type="button" className='bg-white 90 blur-effect-theme button-theme p-0.5 shadow shadow-sky-200' onClick={()=>onAddToCart()}><ShoppingCartIcon className='icon-style text-slate-900'/></button>
+                    <button type='button' className='bg-white 90 blur-effect-theme button-theme p-0.5 shadow shadow-sky-200 text-sm px-2 py-1'onClick={()=> {onAddToCart(); onCartToggle();}}>{btn}</button>
                 </div>
             </div>
             <div className={`flex items-center mt-2 ${ifExist ? 'absolute top-5 right-1' : 'justify-items-center'} `}>
